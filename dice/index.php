@@ -12,10 +12,10 @@ $map = [
 
 <?php
     //Meta data
-    $title = 'PlayAsAService';
-    $description = 'Play as a Service';
+    $title = 'PlayAsAService (PaaS) Dice Roll';
+    $description = 'Play as a Service dice roll';
     $author = 'xiaoerge';
-    $keywords = 'Play';
+    $keywords = 'Play, dice, game, xiaoerge, github, opensource, mit';
 
     //Facebook Graph
     $fb_app_id = '';
@@ -48,7 +48,7 @@ $map = [
     <meta property="og:type" content="<?php echo $og_type; ?>"/>
     <meta property="og:url" content="<?php echo $og_url; ?>"/>
     <meta property="og:description" content="<?php echo $og_description; ?>"/>
-    <meta property="og:image" content="./assets/icons/ms-icon-310x310.png"/>
+    <meta property="og:image" content="<?php echo $map[$r]['gif']; ?>"/>
     <meta property="og:image:width" content="192"/>
     <meta property="og:image:height" content="192"/>
     <meta name="twitter:card" content="<?php echo $twitter_card; ?>">
