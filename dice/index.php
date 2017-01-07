@@ -1,19 +1,22 @@
 <?php
 $r = rand(1, 6);
 $map = [
-    1 => ['png' => 'https://emz.us/paas/dice/one.png', 'gif' => 'https://emz.us/paas/dice/one.gif'],
-    2 => ['png' => 'https://emz.us/paas/dice/two.png', 'gif' => 'https://emz.us/paas/dice/two.gif'],
-    3 => ['png' => 'https://emz.us/paas/dice/three.png', 'gif' => 'https://emz.us/paas/dice/three.gif'],
-    4 => ['png' => 'https://emz.us/paas/dice/four.png', 'gif' => 'https://emz.us/paas/dice/four.gif'],
-    5 => ['png' => 'https://emz.us/paas/dice/five.png', 'gif' => 'https://emz.us/paas/dice/five.gif'],
-    6 => ['six' => 'https://emz.us/paas/dice/six.png', 'gif' => 'https://emz.us/paas/dice/six.gif']
+    1 => ['png' => 'one.png', 'gif' => 'one.gif'],
+    2 => ['png' => 'two.png', 'gif' => 'two.gif'],
+    3 => ['png' => 'three.png', 'gif' => 'three.gif'],
+    4 => ['png' => 'four.png', 'gif' => 'four.gif'],
+    5 => ['png' => 'five.png', 'gif' => 'five.gif'],
+    6 => ['png' => 'six.png', 'gif' => 'six.gif']
 ];
 ?>
 
 <?php
+    //static asset
+    $static_url = 'https://emz.us/paas/dice/';
+
     //Meta data
     $title = 'PlayAsAService (PaaS) Dice Roll';
-    $description = 'Roll and random dice';
+    $description = 'Roll and random dice open source on Github https://github.com/xiaoerge/PlayAsAService';
     $author = 'xiaoerge';
     $keywords = 'Play, dice, game, xiaoerge, github, opensource, mit';
 
@@ -48,18 +51,18 @@ $map = [
     <meta property="og:type" content="<?php echo $og_type; ?>"/>
     <meta property="og:url" content="<?php echo $og_url; ?>"/>
     <meta property="og:description" content="<?php echo $og_description; ?>"/>
-    <meta property="og:image" content="<?php echo $map[$r]['gif']; ?>"/>
+    <meta property="og:image" content="<?php echo $static_url.'/'.$map[$r]['gif']; ?>"/>
     <meta property="og:image:width" content="192"/>
     <meta property="og:image:height" content="192"/>
     <meta name="twitter:card" content="<?php echo $twitter_card; ?>">
     <meta name="twitter:creator" content="<?php echo $twitter_creator; ?>">
     <meta name="twitter:title" content="<?php echo $twitter_title; ?>">
     <meta name="twitter:description" content="<?php echo $twitter_description; ?>">
-    <meta name="twitter:image" content="<?php echo $map[$r]['gif']; ?>">
-    <link rel="icon" type="image/png" sizes="192x192" href="<?php echo $map[$r]['gif']; ?>">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $map[$r]['gif']; ?>">
-    <link rel="icon" type="image/png" sizes="96x96" href="<?php echo $map[$r]['gif']; ?>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $map[$r]['gif']; ?>">
+    <meta name="twitter:image" content="<?php echo $static_url.'/'.$map[$r]['gif']; ?>">
+    <link rel="icon" type="image/png" sizes="192x192" href="<?php echo $static_url.'/'.$map[$r]['gif']; ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $static_url.'/'.$map[$r]['gif']; ?>">
+    <link rel="icon" type="image/png" sizes="96x96" href="<?php echo $static_url.'/'.$map[$r]['gif']; ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $static_url.'/'.$map[$r]['gif']; ?>">
     <meta name="theme-color" content="#ffffff">
     <title><?php echo $title; ?></title>
 
