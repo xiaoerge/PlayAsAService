@@ -13,7 +13,7 @@ $map = [
 <?php
     //Meta data
     $title = 'PlayAsAService (PaaS) Dice Roll';
-    $description = 'Play as a Service dice roll';
+    $description = 'Roll and random dice';
     $author = 'xiaoerge';
     $keywords = 'Play, dice, game, xiaoerge, github, opensource, mit';
 
@@ -48,32 +48,18 @@ $map = [
     <meta property="og:type" content="<?php echo $og_type; ?>"/>
     <meta property="og:url" content="<?php echo $og_url; ?>"/>
     <meta property="og:description" content="<?php echo $og_description; ?>"/>
-    <meta property="og:image" content="<?php echo $map[$r]['gif']; ?>"/>
+    <meta property="og:image" content="<?php echo $map[$r]['png']; ?>"/>
     <meta property="og:image:width" content="192"/>
     <meta property="og:image:height" content="192"/>
     <meta name="twitter:card" content="<?php echo $twitter_card; ?>">
     <meta name="twitter:creator" content="<?php echo $twitter_creator; ?>">
     <meta name="twitter:title" content="<?php echo $twitter_title; ?>">
     <meta name="twitter:description" content="<?php echo $twitter_description; ?>">
-    <meta name="twitter:image" content="<?php echo $map[$r]['gif']; ?>">
-    <link rel="apple-touch-icon" sizes="<?php echo $map[$r]['gif']; ?>">
-    <link rel="apple-touch-icon" sizes="<?php echo $map[$r]['gif']; ?>">
-    <link rel="apple-touch-icon" sizes="72x72" href="<?php echo $map[$r]['gif']; ?>">
-    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo $map[$r]['gif']; ?>">
-    <link rel="apple-touch-icon" sizes="114x114" href="<?php echo $map[$r]['gif']; ?>">
-    <link rel="apple-touch-icon" sizes="120x120" href="<?php echo $map[$r]['gif']; ?>">
-    <link rel="apple-touch-icon" sizes="144x144" href="<?php echo $map[$r]['gif']; ?>">
-    <link rel="apple-touch-icon" sizes="152x152" href="<?php echo $map[$r]['gif']; ?>">
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $map[$r]['gif']; ?>">
-    <link rel="icon" type="image/png" sizes="192x192" href="<?php echo $map[$r]['gif']; ?>">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $map[$r]['gif']; ?>">
-    <link rel="icon" type="image/png" sizes="96x96" href="<?php echo $map[$r]['gif']; ?>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $map[$r]['gif']; ?>">
-    <link rel="manifest" href="./assets/icons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="<?php echo $map[$r]['gif']; ?>">
-    <meta name="msapplication-TileImage" content="<?php echo $map[$r]['gif']; ?>">
-    <meta name="msapplication-TileImage" content="<?php echo $map[$r]['gif']; ?>">
+    <meta name="twitter:image" content="<?php echo $map[$r]['png']; ?>">
+    <link rel="icon" type="image/png" sizes="192x192" href="<?php echo $map[$r]['png']; ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $map[$r]['png']; ?>">
+    <link rel="icon" type="image/png" sizes="96x96" href="<?php echo $map[$r]['png']; ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $map[$r]['png']; ?>">
     <meta name="theme-color" content="#ffffff">
     <title><?php echo $title; ?></title>
 
