@@ -34,7 +34,7 @@ $map = [
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="en" manifest="./manifest.appcache">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,18 +48,18 @@ $map = [
     <meta property="og:type" content="<?php echo $og_type; ?>"/>
     <meta property="og:url" content="<?php echo $og_url; ?>"/>
     <meta property="og:description" content="<?php echo $og_description; ?>"/>
-    <meta property="og:image" content="<?php echo $map[$r]['png']; ?>"/>
+    <meta property="og:image" content="<?php echo $map[$r]['gif']; ?>"/>
     <meta property="og:image:width" content="192"/>
     <meta property="og:image:height" content="192"/>
     <meta name="twitter:card" content="<?php echo $twitter_card; ?>">
     <meta name="twitter:creator" content="<?php echo $twitter_creator; ?>">
     <meta name="twitter:title" content="<?php echo $twitter_title; ?>">
     <meta name="twitter:description" content="<?php echo $twitter_description; ?>">
-    <meta name="twitter:image" content="<?php echo $map[$r]['png']; ?>">
-    <link rel="icon" type="image/png" sizes="192x192" href="<?php echo $map[$r]['png']; ?>">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $map[$r]['png']; ?>">
-    <link rel="icon" type="image/png" sizes="96x96" href="<?php echo $map[$r]['png']; ?>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $map[$r]['png']; ?>">
+    <meta name="twitter:image" content="<?php echo $map[$r]['gif']; ?>">
+    <link rel="icon" type="image/png" sizes="192x192" href="<?php echo $map[$r]['gif']; ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $map[$r]['gif']; ?>">
+    <link rel="icon" type="image/png" sizes="96x96" href="<?php echo $map[$r]['gif']; ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $map[$r]['gif']; ?>">
     <meta name="theme-color" content="#ffffff">
     <title><?php echo $title; ?></title>
 
@@ -69,6 +69,6 @@ $map = [
 </head>
 
 <body>
-    <img src="<?php echo $map[$r]['gif'] ?>" width="192" height="192">
+    <img src="<?php echo $map[$r]['gif'] ?>" width="192" height="192" alt="<?php echo $r; ?>">
 </body>
 </html>
