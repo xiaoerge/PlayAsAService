@@ -1,7 +1,7 @@
 <?php
     //Meta data
     $title = 'PlayAsAService';
-    $description = 'Play as a Service';
+    $description = 'Play as a Service open source on Github https://github.com/xiaoerge/PlayAsAService';
     $author = 'xiaoerge';
     $keywords = 'Play';
 
