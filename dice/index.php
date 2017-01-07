@@ -1,4 +1,5 @@
 <?php
+
 $r = rand(1, 6);
 $map = [
     1 => ['png' => 'one.png', 'gif' => 'one.gif'],
