@@ -1,12 +1,12 @@
 <?php
 $r = rand(1, 6);
 $map = [
-    1 => ['png' => 'one.png', 'gif' => 'one.gif'],
-    2 => ['png' => 'two.png', 'gif' => 'two.gif'],
-    3 => ['png' => 'three.png', 'gif' => 'three.gif'],
-    4 => ['png' => 'four.png', 'gif' => 'four.gif'],
-    5 => ['png' => 'five.png', 'gif' => 'five.gif'],
-    6 => ['six' => 'six.png', 'gif' => 'six.gif']
+    1 => ['png' => 'https://emz.us/paas/dice/one.png', 'gif' => 'https://emz.us/paas/dice/one.gif'],
+    2 => ['png' => 'https://emz.us/paas/dice/two.png', 'gif' => 'https://emz.us/paas/dice/two.gif'],
+    3 => ['png' => 'https://emz.us/paas/dice/three.png', 'gif' => 'https://emz.us/paas/dice/three.gif'],
+    4 => ['png' => 'https://emz.us/paas/dice/four.png', 'gif' => 'https://emz.us/paas/dice/four.gif'],
+    5 => ['png' => 'https://emz.us/paas/dice/five.png', 'gif' => 'https://emz.us/paas/dice/five.gif'],
+    6 => ['six' => 'https://emz.us/paas/dice/six.png', 'gif' => 'https://emz.us/paas/dice/six.gif']
 ];
 ?>
 
