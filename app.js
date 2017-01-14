@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var helmet = require('helmet');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
+var diceroll = require('./routes/diceroll');
 
 var app = express();
 
@@ -24,7 +24,7 @@ app.use('/static', express.static(path.join(__dirname, 'bower_components')));
 app.use('/static', express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
+app.use('/diceroll', diceroll);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
