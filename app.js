@@ -6,8 +6,8 @@ var bodyParser = require('body-parser');
 var helmet = require('helmet');
 
 var index = require('./routes/index');
-var diceRoll = require('./routes/diceroll');
-var rockPaperScissor = require('./routes/rockpaperscissor');
+var diceRoll = require('./routes/dice-roll');
+var rockPaperScissor = require('./routes/rock-paper-scissor');
 
 var app = express();
 
