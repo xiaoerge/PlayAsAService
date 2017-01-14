@@ -7,12 +7,12 @@ router.get('/', function (req, res, next) {
     var randVal = util.randomInt(1, 6);
     var staticUrl = '/static/images/diceroll/';
     var staticMap = {
-        1: {'png': staticUrl+'dice-rolling-1.png', 'gif': staticUrl+'dice-rolling-1.gif'},
-        2: {'png': staticUrl+'dice-rolling-2.png', 'gif': staticUrl+'dice-rolling-2.gif'},
-        3: {'png': staticUrl+'dice-rolling-3.png', 'gif': staticUrl+'dice-rolling-3.gif'},
-        4: {'png': staticUrl+'dice-rolling-4.png', 'gif': staticUrl+'dice-rolling-4.gif'},
-        5: {'png': staticUrl+'dice-rolling-5.png', 'gif': staticUrl+'dice-rolling-5.gif'},
-        6: {'png': staticUrl+'dice-rolling-6.png', 'gif': staticUrl+'dice-rolling-6.gif'}
+        1: {'val': 1, 'png': staticUrl+'dice-rolling-1.png', 'gif': staticUrl+'dice-rolling-1.gif'},
+        2: {'val': 2, 'png': staticUrl+'dice-rolling-2.png', 'gif': staticUrl+'dice-rolling-2.gif'},
+        3: {'val': 3, 'png': staticUrl+'dice-rolling-3.png', 'gif': staticUrl+'dice-rolling-3.gif'},
+        4: {'val': 4, 'png': staticUrl+'dice-rolling-4.png', 'gif': staticUrl+'dice-rolling-4.gif'},
+        5: {'val': 5, 'png': staticUrl+'dice-rolling-5.png', 'gif': staticUrl+'dice-rolling-5.gif'},
+        6: {'val': 6, 'png': staticUrl+'dice-rolling-6.png', 'gif': staticUrl+'dice-rolling-6.gif'}
     };
 
     var title = 'PlayAsAService (PaaS) Dice Roll';
@@ -39,8 +39,8 @@ router.get('/', function (req, res, next) {
 
         //view specific stuff
         'fullUrl': req.protocol + '://' + req.get('host') + req.baseUrl,
-        'randSrc': staticMap[randVal],
-        'randVal': randVal
+        'randSrc': staticMap[randVal]['gif'],
+        'randVal': staticMap[randVal]['val']
     };
 
     res.render('dice-roll', data);
