@@ -2,13 +2,18 @@ extends layout
 
 block content
     div(class='text-center')
-        h1 Play as a Service (PaaS) #[small By #[a(href='https://github.com/xiaoerge', target='__blank') xiaoerge]]
-        h4 Play random games like Dice, Rock Paper Scissors, coin flip on social media sites.
 
-        a(href='/diceroll', target='__blank') Dice Roll Demo
+        .jumbotron
+            h1 Play as a Service (PaaS) #[small By #[a(href='https://github.com/xiaoerge', target='__blank') xiaoerge]]
+            p Play random games like Dice, Rock Paper Scissors, coin flip on social media sites.
+
+            a(href='/diceroll', target='__blank') Dice Roll Demo
+            | &nbsp;&nbsp;&nbsp;
+            a(href='/rockpaperscissor', target='__blank') Rock Paper Scissor
+            | &nbsp;&nbsp;&nbsp;
 
         p
-            a(href='/diceroll', target='__blank') View Source
+            a(href='https://github.com/xiaoerge/PlayAsAService', target='__blank') View Source
 
     block append script
         script(src='/static/bootstrap/dist/js/bootstrap.min.js')
