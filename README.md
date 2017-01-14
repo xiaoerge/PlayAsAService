@@ -25,5 +25,5 @@ npm start
 1. Create a `Pug` view in `./views` and name if afer the game, eg `coin-flip.pug`
 2. Create a router in `./routes` and name if after the game, eg `coin-flip.js`
 3. Open `coin-flip.js` and create a HTTP Get handler at path `/` that sends the necessary data to the view.
-4. Open `coin-lip.pug` and format it's content
+4. Open `coin-flip.pug` and format it's content
 5. Open `app.js` at project root. Import and use `coin-flip` router.

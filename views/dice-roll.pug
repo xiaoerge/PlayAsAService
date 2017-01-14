@@ -3,6 +3,32 @@
 extends layout
 
 block content
-    .text-center
-        p Try pasting the URL into Slack
-        img.img-responsive(src=randSrc['gif'], alt=randVal)
+    h2.text-center= title
+    .row
+        .col-md-6.col-md-offset-3
+            .panel.panel-default
+                .panel-body
+                    .row
+                        .col-md-8
+                            h1#rand-val(style={'font-size': '8em;'}) ...
+                        .col-md-4
+                            img.img-thumbnail(style={'border': 'none;'}, src=randSrc['gif'], alt=randVal)
+                .panel-footer
+                    form.form-inline
+                        .form-group
+                            button#re-replay.btn.btn-info(type='button') #[i.fa.fa-play] Replay
+                        .form-group.pull-right
+                            //- button#copy-url.btn.btn-default.pull-right(type='button', data-clipboard-target="#url-address") #[i.fa.fa-clipboard]
+                            //- input#url-address.form-control(type="text", value=fullUrl)
+
+append script
+    script.
+        $(function() {
+            setTimeout(function() {
+                $('#rand-val').text('#{randVal}')
+            }, 2000);
+
+            $('#re-replay').click(function() {
+                window.location.replace('#{fullUrl}?t='+Date.now());
+            });
+        });
