@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    div(class='text-center')
+        p.h1 #{title}
+        p#title-paragraph Welcome to #{title}
+        p='Rendered in '+rTime+' sec'
+
+    div.well(data-language='javascript')&attributes({'data-runtime': 'node', 'data-os': 'windows'}) hello world
+
+    ul.list-group
+        - for (var i = 0; i < 3; i++)
+            li.list-group-item item
+
+        each val in [1, 2, 3]
+            li.list-group-item #{val}
+
+    mixin pet(name)
+        li.pet= name
+    ul
+        +pet('cat')
+        +pet('dog')
+        +pet('pig')
+
+    block append script
+        script(src='/static/bootstrap/dist/js/bootstrap.min.js')
