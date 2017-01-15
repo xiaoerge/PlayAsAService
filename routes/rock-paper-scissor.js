@@ -29,11 +29,16 @@ router.get('/', function (req, res, next) {
         'twitterTitle': title,
         'twitterDescription': description,
 
-        'xlgIcon': staticMap[randVal]['gif'],
-        'lgIcon': staticMap[randVal]['gif'],
-        'mdIcon': staticMap[randVal]['gif'],
-        'smIcon': staticMap[randVal]['gif'],
-        'xsIcon': staticMap[randVal]['gif'],
+        'xlgIconGif': staticMap[randVal]['gif'],
+        'lgIconGif': staticMap[randVal]['gif'],
+        'mdIconGif': staticMap[randVal]['gif'],
+        'smIconGif': staticMap[randVal]['gif'],
+        'xsIconGif': staticMap[randVal]['gif'],
+        'xlgIconPng': staticMap[randVal]['png'],
+        'lgIconPng': staticMap[randVal]['png'],
+        'mdIconPng': staticMap[randVal]['png'],
+        'smIconPng': staticMap[randVal]['png'],
+        'xsIconPng': staticMap[randVal]['png'],
 
         //view specific stuff
         'fullUrl': req.protocol + '://' + req.get('host') + req.baseUrl,

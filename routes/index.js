@@ -19,11 +19,11 @@ router.get('/', function(req, res, next) {
         'twitterCreator': '@',
         'twitterTitle': title,
         'twitterDescription': description,
-        'xlgIcon': '/static/icons/ms-icon-310x310.png',
-        'lgIcon': '/static/icons/android-icon-192x192.png',
-        'mdIcon': '/static/icons/favicon-96x96.png',
-        'smIcon': '/static/icons/favicon-32x32.png',
-        'xsIcon': '/static/icons/favicon-16x16.png'
+        'xlgIconPng': '/static/icons/ms-icon-310x310.png',
+        'lgIconPng': '/static/icons/android-icon-192x192.png',
+        'mdIconPng': '/static/icons/favicon-96x96.png',
+        'smIconPng': '/static/icons/favicon-32x32.png',
+        'xsIconPng': '/static/icons/favicon-16x16.png'
     };
 
     res.render('index', data);
