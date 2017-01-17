@@ -1,3 +1,30 @@
-Play as a Service (PaaS)
+# Play as a Service (PaaS)
+#### Not to be confused with Platform as a Service.
 
-Play random games like `Dice`, `Rock Paper Scissors`
+## Play random games like `Dice`, `Rock Paper Scissors` on social media sites.
+
+## The idea is to be able to paste a PaaS url into websites like Slack, Facebook and Twitter and generate random beautiful results each time.
+
+### Known issues
+- Formatting of PaaS on social media websites.
+- Caching by social media.
+
+
+### How to run
+```
+git clone https://github.com/xiaoerge/PlayAsAService.git
+
+cd PlayAsAService
+
+npm install
+
+npm start
+```
+
+
+### How to contribute
+1. Create a `Pug` view in `./views` and name it after the game, eg `coin-flip.pug`
+2. Create a router in `./routes` and name it after the game, eg `coin-flip.js`
+3. Open `coin-flip.js` and create a HTTP Get handler at path `/` that sends the necessary data to the view.
+4. Open `coin-flip.pug` and format it's content
+5. Open `app.js` at project root. Import and use `coin-flip` router.
