@@ -12,8 +12,8 @@ router.get('/', function (req, res, next) {
         3: {'val': 'Scissor', 'png': staticUrl+'scissor.png', 'gif': staticUrl+'scissor.gif'}
     };
 
-    var title = 'PlayAsAService (PaaS) Rock Paper Scissor';
-    var description = 'Rock Paper Scissor open source on Github https://github.com/xiaoerge/PlayAsAService';
+    var title = 'Rock Paper Scissor';
+    var description = 'Rock Paper Scissor on Github https://github.com/xiaoerge/PlayAsAService';
     var data = {
         'title': title,
         'description': description,

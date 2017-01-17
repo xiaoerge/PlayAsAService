@@ -4,23 +4,27 @@ extends layout
 
 block content
 
-    h2.text-center #[a(href="/") Back] #{title}
+    h2.text-center= title
     .row
         .col-md-6.col-md-offset-3
             .panel.panel-default
+                .panel-heading
+                    a(href="/") Home
                 .panel-body
                     .row
                         .col-md-8
                             h1#rand-val(style={'font-size': '8em;'}) ...
                         .col-md-4
-                            img.img-thumbnail(style={'border': 'none;'}, src=randSrc, alt=randVal)
+                            img.img-thumbnail.md-image(style={'border': 'none;'}, src=randSrc, alt=randVal)
                 .panel-footer
                     form.form-inline
                         .form-group
-                            button#re-replay.btn.btn-info(type='button') #[i.fa.fa-play] Replay
+                            button#re-replay.btn.btn-info(type='button') Replay
                         .form-group.pull-right
+
                             //- button#copy-url.btn.btn-default.pull-right(type='button', data-clipboard-target="#url-address") #[i.fa.fa-clipboard]
                             //- input#url-address.form-control(type="text", value=fullUrl)
+
 
 append script
     script.

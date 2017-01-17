@@ -3,16 +3,18 @@
 extends layout
 
 block content
-    h2.text-center #[a(href="/") Back] #{title}
+    h2.text-center= title
     .row
         .col-md-6.col-md-offset-3
             .panel.panel-default
+                .panel-heading
+                    a(href="/") Home
                 .panel-body
                     .row
                         .col-md-8
-                            h1#rand-val(style={'font-size': '5em;'}) ...
+                            h1#rand-val(style={'font-size': '4em;'}) ...
                         .col-md-4
-                            img.img-thumbnail(style={'border': 'none;'}, src=randSrc, alt=randVal)
+                            img.img-thumbnail.md-image(style={'border': 'none;'}, src=randSrc, alt=randVal)
                 .panel-footer
                     form.form-inline
                         .form-group

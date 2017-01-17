@@ -1,3 +1,7 @@
 * {
     font-family: 'Indie Flower', cursive !important;
 }
+.md-image {
+    width: 140px;
+    height: 140px;
+}

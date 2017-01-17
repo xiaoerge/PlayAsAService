@@ -15,8 +15,8 @@ router.get('/', function (req, res, next) {
         6: {'val': 6, 'png': staticUrl+'dice-rolling-6.png', 'gif': staticUrl+'dice-rolling-6.gif'}
     };
 
-    var title = 'PlayAsAService (PaaS) Dice Roll';
-    var description = 'Roll and random dice open source on Github https://github.com/xiaoerge/PlayAsAService';
+    var title = 'Dice Roll';
+    var description = 'Roll and random dice on Github https://github.com/xiaoerge/PlayAsAService';
     var data = {
         'title': title,
         'description': description,
