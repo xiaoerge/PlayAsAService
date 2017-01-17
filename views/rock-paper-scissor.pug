@@ -3,7 +3,7 @@
 extends layout
 
 block content
-    h2.text-center= title
+    h2.text-center #[a(href="/") Back] #{title}
     .row
         .col-md-6.col-md-offset-3
             .panel.panel-default
@@ -26,7 +26,7 @@ append script
         $(function() {
             setTimeout(function() {
                 $('#rand-val').text('#{randVal}')
-            }, 2000);
+            }, 3000);
 
             $('#re-replay').click(function() {
                 window.location.replace('#{fullUrl}?t='+Date.now());
