@@ -13,19 +13,21 @@ html(lang="en")
         meta(property="og:type", content=ogType)
         meta(property="og:url", content=ogUrl)
         meta(property="og:description", content=ogDescription)
-        meta(property="og:image", content=xlgIconPng)
+        meta(property="og:image", content=host+xlgIconGif)
         meta(property="og:image:width", content="192")
         meta(property="og:image:height", content="192")
         meta(name="twitter:card", content=twitterCard)
         meta(name="twitter:creator", content=twitterCreator)
         meta(name="twitter:title", content=twitterTitle)
         meta(name="twitter:description", content=twitterDescription)
-        meta(name="twitter:image", content=xlgIconPng)
+        meta(name="twitter:image", content=host+xlgIconGif)
         //- include appleLinks
-        link(rel="icon" type="image/png", sizes="192x192" href=lgIconGif)
-        link(rel="icon" type="image/png", sizes="96x96" href=mdIconGif)
-        link(rel="icon" type="image/png", sizes="32x32" href=smIconGif)
-        link(rel="icon" type="image/png", sizes="16x16" href=xsIconGif)
+
+        //- We are safer with absolute urls,  why?
+        link(rel="icon" type="image/png", sizes="192x192" href=host+lgIconGif)
+        link(rel="icon" type="image/png", sizes="96x96" href=host+mdIconGif)
+        link(rel="icon" type="image/png", sizes="32x32" href=host+smIconGif)
+        link(rel="icon" type="image/png", sizes="16x16" href=host+xsIconGif)
         //- link(rel="manifest", href="/static/icons/manifest.json")
         //- include microsoftApp
 

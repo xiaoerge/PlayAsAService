@@ -3,7 +3,8 @@ var router = express.Router();
 
 router.get('/', function(req, res, next) {
 
-    var url = req.protocol + '://' + req.get('host') + req.baseUrl;
+    var host = req.protocol + '://' + req.get('host');
+    var appUrl = host + req.baseUrl;
     var title = 'PlayAsAService (PaaS)';
     var description = 'Play random games like Dice, Rock Paper Scissors on social media sites.';
     var data = {
@@ -11,10 +12,11 @@ router.get('/', function(req, res, next) {
         'description': description,
         'author': 'xiaoerge',
         'keywords': 'Play, game, xiaoerge, github, opensource, mit',
+        'host': host,
         'fbAppId': '',
         'fbAdmin': '',
         'ogType': 'website',
-        'ogUrl': url,
+        'ogUrl': appUrl,
         'ogDescription': description,
         'twitterCard': 'summary',
         'twitterCreator': '@',

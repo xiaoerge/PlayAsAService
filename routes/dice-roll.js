@@ -4,8 +4,9 @@ var util = require('../common/util');
 
 router.get('/', function (req, res, next) {
 
+    var host = req.protocol + '://' + req.get('host');
+    var appUrl = host + req.baseUrl;
     var randVal = util.randomInt(1, 6);
-    var url = req.protocol + '://' + req.get('host') + req.baseUrl;
     var staticUrl = '/static/images/diceroll/';
     var staticMap = {
         1: {'val': 1, 'png': staticUrl+'dice-rolling-1.png', 'gif': staticUrl+'dice-rolling-1.gif'},
@@ -16,17 +17,18 @@ router.get('/', function (req, res, next) {
         6: {'val': 6, 'png': staticUrl+'dice-rolling-6.png', 'gif': staticUrl+'dice-rolling-6.gif'}
     };
 
-    var title = 'Dice Roll';
-    var description = 'Roll and random dice on Github https://github.com/xiaoerge/PlayAsAService';
+    var title = 'Dice Roll (PlayAsAService)';
+    var description = 'You rolled a '+randVal;
     var data = {
         'title': title,
         'description': description,
         'author': 'xiaoerge',
-        'keywords': 'Play, dice, game, xiaoerge, github, opensource, mit',
+        'keywords': 'Play, dice, game, xiaoerge, github, opensource',
+        'host': host,
         'fbAppId': '',
         'fbAdmin': '',
         'ogType': 'website',
-        'ogUrl': url,
+        'ogUrl': appUrl,
         'ogDescription': description,
         'twitterCard': 'summary',
         'twitterCreator': '@',
@@ -45,7 +47,7 @@ router.get('/', function (req, res, next) {
         'xsIconPng': staticMap[randVal]['png'],
 
         //view specific stuff
-        'fullUrl': url,
+        'fullUrl': appUrl,
         'randSrc': staticMap[randVal]['gif'],
         'randVal': staticMap[randVal]['val']
     };
