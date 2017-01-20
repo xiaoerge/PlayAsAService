@@ -5,6 +5,7 @@ var util = require('../common/util');
 router.get('/', function (req, res, next) {
 
     var randVal = util.randomInt(1, 3);
+    var url = req.protocol + '://' + req.get('host') + req.baseUrl;
     var staticUrl = '/static/images/rockpaperscissor/';
     var staticMap = {
         1: {'val': 'Rock', 'png': staticUrl+'rock.png', 'gif': staticUrl+'rock.gif'},
@@ -22,7 +23,7 @@ router.get('/', function (req, res, next) {
         'fbAppId': '',
         'fbAdmin': '',
         'ogType': 'website',
-        'ogUrl': 'https://github.com/xiaoerge/PlayAsAService',
+        'ogUrl': url,
         'ogDescription': description,
         'twitterCard': 'summary',
         'twitterCreator': '@',
