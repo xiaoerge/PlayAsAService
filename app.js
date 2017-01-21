@@ -8,6 +8,7 @@ var helmet = require('helmet');
 var index = require('./routes/index');
 var diceRoll = require('./routes/dice-roll');
 var rockPaperScissor = require('./routes/rock-paper-scissor');
+var cardDraw = require('./routes/card-draw');
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use('/static', express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/diceroll', diceRoll);
 app.use('/rockpaperscissor', rockPaperScissor);
+app.use('/carddraw', cardDraw);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
