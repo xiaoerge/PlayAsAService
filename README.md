@@ -5,6 +5,7 @@
  
 ![Slack](https://raw.githubusercontent.com/xiaoerge/PlayAsAService/master/screenshot/paas_dice_roll_slack.png)
 ![Twitter](https://raw.githubusercontent.com/xiaoerge/PlayAsAService/master/screenshot/paas_dice_roll_twitter.png)
+![Facebook](https://raw.githubusercontent.com/xiaoerge/PlayAsAService/master/screenshot/paas_dice_roll_facebook.png)
 
 # End User Stuff
 ## How to play
