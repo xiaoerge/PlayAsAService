@@ -50,3 +50,12 @@ npm start
 3. Open `coin-flip.js` and create a HTTP Get handler at path `/` that sends the necessary data to the view.
 4. Open `coin-flip.pug` and format it's content
 5. Open `app.js` at project root. Import and use `coin-flip` router.
+
+## Image size constraints
+
+### Facebook
+* Less than 8MB
+* At least 200px by 200px.
+
+### Twitter
+* Web: maximum height of 375px, maximum width of 435px
