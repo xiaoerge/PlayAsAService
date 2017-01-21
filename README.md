@@ -2,6 +2,9 @@
 #### Not to be confused with Platform as a Service.
 
 ## Play random games like `Dice`, `Rock Paper Scissors` on social media sites.
+ 
+![Slack](https://raw.githubusercontent.com/xiaoerge/PlayAsAService/master/screenshot/paas_dice_roll_slack.png)
+![Twitter](https://raw.githubusercontent.com/xiaoerge/PlayAsAService/master/screenshot/paas_dice_roll_twitter.png)
 
 # End User Stuff
 ## How to play
@@ -13,7 +16,7 @@ and have PaaS generate another dice value. This ends a round of dice roll.
 ### Known issues
 - Unfortunately we can't cover every social media site in existence. 
 We try our best to keep a PaaS game beautiful on Facebook, Twitter, and Slack.
-- Caching of older version os PaaS game by social media sites. 
+- Caching of older version of PaaS game by social media sites. 
 We recommend append an arbitrary query string on the url so it may be treated as a new request. 
 An example of the Dice roll game url with query string would be `https://paas.idpie.com/diceroll?abc=123`
 
@@ -25,6 +28,7 @@ An example of the Dice roll game url with query string would be `https://paas.id
 ## How does PaaS render a game on social media
 
 Google 
+
 1. Facebook Open Graph Protocol 
 2. Twitter Card Developer Spec.
 3. Slack unfurling
