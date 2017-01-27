@@ -5,6 +5,12 @@
 
 ### Slack Integration
 ![Slack Integration](https://raw.githubusercontent.com/xiaoerge/PlayAsAService/master/screenshot/paas_slack_command_guide.png)
+When Slack makes this request, it'll send a post body parameter `text`.
+PaaS expects `text` to be the value of the desired game. 
+PaaS currently has `dice`, `rockpaperscissor` and `carddraw`. 
+More games will be added in the future 
+and when they do, they'll automatically be available towards slack command. 
+For the time being,  have fun with /paas diceroll | rockpaperscissor | carddraw
 
 # End User Stuff
 ## How to play
