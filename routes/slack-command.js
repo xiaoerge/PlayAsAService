@@ -5,6 +5,9 @@ var diceRoll = require('../core/dice-roll');
 var rockPaperScissor = require('../core/rock-paper-scissor');
 var cardDraw = require('../core/card-draw');
 
+router.get('/', function(req, res, next) {
+    res.redirect('/');
+});
 router.post('/', function (req, res, next) {
 
     var host = req.protocol + '://' + req.get('host');

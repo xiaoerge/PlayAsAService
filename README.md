@@ -2,10 +2,9 @@
 #### Not to be confused with Platform as a Service.
 
 ## Play random games like `Dice`, `Rock Paper Scissors` on social media sites.
- 
-![Slack](https://raw.githubusercontent.com/xiaoerge/PlayAsAService/master/screenshot/paas_dice_roll_slack.png)
-![Twitter](https://raw.githubusercontent.com/xiaoerge/PlayAsAService/master/screenshot/paas_dice_roll_twitter.png)
-![Facebook](https://raw.githubusercontent.com/xiaoerge/PlayAsAService/master/screenshot/paas_dice_roll_facebook.png)
+
+### Slack Integration
+![Slack Integration](https://raw.githubusercontent.com/xiaoerge/PlayAsAService/master/screenshot/paas_slack_command_guide.png)
 
 # End User Stuff
 ## How to play
@@ -45,12 +44,12 @@ npm install
 npm start
 ```
 
-## How to contribute a new game
-1. Create a `Pug` view in `./views` and name it after the game, eg `coin-flip.pug`
-2. Create a router in `./routes` and name it after the game, eg `coin-flip.js`
-3. Open `coin-flip.js` and create a HTTP Get handler at path `/` that sends the necessary data to the view.
-4. Open `coin-flip.pug` and format it's content
-5. Open `app.js` at project root. Import and use `coin-flip` router.
+~~## How to contribute a new game~~
+~~1. Create a `Pug` view in `./views` and name it after the game, eg `coin-flip.pug`~~
+~~2. Create a router in `./routes` and name it after the game, eg `coin-flip.js`~~
+~~3. Open `coin-flip.js` and create a HTTP Get handler at path `/` that sends the necessary data to the view.~~
+~~4. Open `coin-flip.pug` and format it's content~~
+~~5. Open `app.js` at project root. Import and use `coin-flip` router.~~
 
 ## Image size constraints
 
